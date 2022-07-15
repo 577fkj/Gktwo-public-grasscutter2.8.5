@@ -1,0 +1,29 @@
+gktwo整理
+
+
+下载resources文件放到grasscutter下
+打开启动.bat
+使用启动器，设置      服务器127.0.0.1 端口8891，启动游戏
+打开游戏登录随机的账号
+
+进入游戏后可以选择关闭代理，这不影响游戏进行，以免造成网络异常
+可使用命令工具
+
+
+更新地址
+https://github.com/Gktwo/Gktwo-public-grasscutter2.8.5
+默认的系统代理是 127.0.0.1 端口 12345
+（本一键包删除了mitmproxy等代理软件，用启动器代替，一定程度上解决了，代理卡死的问题）
+
+
+原神私服（grasscutter）是开源项目，如果你是花钱购买服务端文件，请及时退款举报。
+
+名字可用的彩色代码 在数据库软件中修改 
+<color=#FF0000>***</color>              红
+<color=#FF7F00>***</color>             橙色
+<color=#FFFF00>***</color>                黄
+<color=#00FF00>***</color>         绿
+<color=#00FFFF>***</color>   青
+<color=#0000FF>***</color>   蓝
+<color=#8F00FF>***</color>   紫
+
