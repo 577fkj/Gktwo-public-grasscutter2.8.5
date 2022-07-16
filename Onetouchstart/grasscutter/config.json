@@ -1,0 +1,135 @@
+{
+  "folderStructure": {
+    "resources": "./resources/",
+    "data": "./data/",
+    "packets": "./packets/",
+    "scripts": "./resources/Scripts/",
+    "plugins": "./plugins/"
+  },
+  "databaseInfo": {
+    "server": {
+      "connectionUri": "mongodb://localhost:27017",
+      "collection": "grasscutter"
+    },
+    "game": {
+      "connectionUri": "mongodb://localhost:27017",
+      "collection": "grasscutter"
+    }
+  },
+  "language": {
+    "language": "zh_CN",
+    "fallback": "en_US",
+    "document": "EN"
+  },
+  "account": {
+    "autoCreate": true,
+    "EXPERIMENTAL_RealPassword": false,
+    "defaultPermissions": ["*"],
+    "maxPlayer": -1
+  },
+  "server": {
+    "debugLevel": "NONE",
+    "DebugWhitelist": [],
+    "DebugBlacklist": [],
+    "runMode": "HYBRID",
+    "http": {
+      "bindAddress": "0.0.0.0",
+      "accessAddress": "127.0.0.1",
+      "bindPort": 443,
+      "accessPort": 0,
+      "encryption": {
+        "useEncryption": true,
+        "useInRouting": true,
+        "keystore": "./keystore.p12",
+        "keystorePassword": "123456"
+      },
+      "policies": {
+        "cors": {
+          "enabled": true,
+          "allowedOrigins": [
+            "*"
+          ]
+        }
+      },
+      "files": {
+        "indexFile": "./index.html",
+        "errorFile": "./404.html"
+      }
+    },
+    "game": {
+      "bindAddress": "0.0.0.0",
+      "accessAddress": "127.0.0.1",
+      "bindPort": 22102,
+      "accessPort": 0,
+      "loadEntitiesForPlayerRange": 100,
+      "enableScriptInBigWorld": true,
+      "enableConsole": true,
+      "gameOptions": {
+        "inventoryLimits": {
+          "weapons": 2000,
+          "relics": 2000,
+          "materials": 2000,
+          "furniture": 2000,
+          "all": 30000
+        },
+        "avatarLimits": {
+          "singlePlayerTeam": 4,
+          "multiplayerTeam": 4
+        },
+        "sceneEntityLimit": 1000,
+        "watchGachaConfig": true,
+        "enableShopItems": true,
+        "staminaUsage": true,
+        "energyUsage": true,
+        "resinOptions": {
+          "resinUsage": true,
+          "cap": 160,
+          "rechargeTime": 480
+        },
+        "rates": {
+          "adventureExp": 1.0,
+          "mora": 1.0,
+          "leyLines": 1.0
+        },
+        "uaPatchCompatible": false
+      },
+      "joinOptions": {
+        "welcomeEmotes": [
+          2007,
+          1002,
+          4010
+        ],
+        "welcomeMessage": "免费资源.请勿受骗",
+        "welcomeMail": {
+          "title": "Welcome to Grasscutter!",
+          "content": "本服务端开源免费，如果你是花钱购买，请尽快退款差评",
+          "items": [
+            {
+              "itemId": 13509,
+              "itemCount": 1,
+              "itemLevel": 1
+            },
+            {
+              "itemId": 201,
+              "itemCount": 99999,
+              "itemLevel": 1
+            }
+          ]
+        }
+      },
+      "serverAccount": {
+        "avatarId": 10000007,
+        "nameCardId": 210001,
+        "adventureRank": 1,
+        "worldLevel": 0,
+        "nickName": "Server",
+        "signature": "Welcome to Grasscutter!"
+      }
+    },
+    "dispatch": {
+      "regions": [],
+      "defaultName": "Grasscutter"
+    }
+  },
+  "version": 3
+}
